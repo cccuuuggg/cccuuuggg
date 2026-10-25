@@ -1,31 +1,15 @@
-# 你好，我是 cccuuuuggg
+在 Android 上折腾东西，另外养着几台 Linux 服务器。
 
-独立开发者。手上同时跑着几条线，大部分时间在 **Android 手机 + 远程 Linux 服务器** 上完成。
+手上在做的：
 
-## 在做什么
+- 一套手游自动化脚本工程（一键玩平台），400 多个插件在跑；我管架构、公共模块和查错工具
+- 老网游私服复刻 —— 抓包、判协议、写服务端兼容层
+- 自己的机器：反代、隧道、MCP 和 OCR 服务
 
-**手游自动化工程**
-一键玩平台的插件式脚本工程，400+ 个脚本插件协同运行。负责架构设计、公共模块和排障工具链（调用图分析、静态校验、坐标库维护）。
+平时用的：Python、Node、Kotlin、Shell；apktool、jadx、Playwright、ADB、proot。
 
-**老网游私服复刻**
-协议逆向、服务端兼容层、客户端资源还原。日常就是抓包、判别包边界、对齐状态机。
+**为什么这里几乎是空的**：我做的那些东西不适合公开 —— 私服涉及版权，脚本工程带着别人的账号数据。
+所以这边只放零星能公开的工具，主要工作都在私有环境里。
 
-**自建基础设施**
-多台云服务器的运维（反向代理、内网穿透、隧道）、自建 MCP 服务、OCR 服务集群。
-
-## 技术栈
-
-`Python` `Node.js` `Kotlin / Java` `Shell` `Lua`
-
-日常工具：apktool · jadx · Playwright · ADB · MQTT · proot · ffmpeg
-
-## 现在在折腾
-
-把 agent 运行时搬到 Android 上跑：希望长任务能真的在手机里跑完、中途可以插话、需要确认时随手点一下，
-而不是人必须守在电脑前面。
-
----
-
-Indie developer working from an Android phone. Building mobile automation tooling,
-legacy MMO server emulation, and self-hosted infrastructure.
-Currently exploring on-device agent runtimes.
+现在想解决的一件事：让 agent 在手机本机上把长任务跑完。
+目前的卡点是任务跑到一半要授权，人不在电脑前就只能干等。
